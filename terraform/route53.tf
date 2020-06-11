@@ -21,7 +21,7 @@ resource "aws_acm_certificate_validation" "cert" {
 
 resource "aws_api_gateway_domain_name" "approval" {
   certificate_arn = "${aws_acm_certificate_validation.cert.certificate_arn}"
-  domain_name     = "approval.engineering.publicissapient.fr"
+  domain_name     = "approval.statix.engineering.publicissapient.fr"
 }
 
 resource "aws_route53_record" "approval" {
