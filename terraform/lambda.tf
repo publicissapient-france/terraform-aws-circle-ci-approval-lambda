@@ -1,4 +1,4 @@
-resource "aws_lambda_function" "lambda_approval" {
+resource "aws_lambda_function" "approval" {
   function_name = "CircleCiApproval"
 
   filename = "./src/lambda.js"
