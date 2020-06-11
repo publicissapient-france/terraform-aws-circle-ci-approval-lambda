@@ -1,7 +1,7 @@
 resource "aws_lambda_function" "approval" {
   function_name = "CircleCiApproval"
 
-  filename = "./src/lambda.js"
+  filename = "./src/lambda.zip"
 
   # "main" is the filename within the zip file (main.js) and "handler"
   # is the name of the property under which the handler function was
